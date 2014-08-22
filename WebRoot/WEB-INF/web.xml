@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<!-- servlet的名字和本个Servlet需要访问java类文件全地址 -->
+	<servlet>
+	        <servlet-name>AddressServlet</servlet-name>
+	        <servlet-class>mediafile.AddressServlet</servlet-class>
+	</servlet>
+	<!-- 寻找外部访问url的Servletname -->
+	<servlet-mapping>
+	        <servlet-name>AddressServlet</servlet-name>
+	        <!-- 允许外部访问的url -->
+	        <url-pattern>/AddressServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
